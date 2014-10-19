@@ -1,0 +1,30 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix fogbeam: <http://schema.fogbeam.com#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix fogcust: <http://customers.fogbeam.com#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+fogcust:Cullet_Boxes  a  <owl:Thing> , <fogbeam:Customer> ;
+        rdfs:label      "CUS-729913" , "Cullet Boxes" ;
+        dc:description  "Cullet Boxes makes boxes in Lumberton, North Carolina." ;
+        dc:title        "Cullet Boxes" ;
+        skos:altLabel   "Cullet Manufacturing" ;
+        skos:prefLabel  "Cullet" .
+
+fogcust:Acme_Widgets  a   <owl:Thing> , <fogbeam:Customer> ;
+        rdfs:label        "CUS729904" , "Acme Widgets" ;
+        dc:description    "Acme Widgets is a custom widget manufacturer located in Wichita, Kansas, and operating since 1893." ;
+        dc:title          "Acme Widgets" ;
+        skos:altLabel     "Acme Manufacturing" ;
+        skos:hiddenLabel  "Acme, Ltd." ;
+        skos:prefLabel    "Acme" .
+
+fogcust:Boxer_Steel  a        <owl:Thing> , <fogbeam:Customer> ;
+        rdfs:label            "CUS729897" , "Boxer Steel" ;
+        dc:description        "Boxer Steel is a botique mini-mill steel products provider located in Pittsburgh, Pennsylvania and operating since 1973" ;
+        dc:title              "Boxer Steel" ;
+        fogbeam:internalLink  "http://crm.int.fogbeam.com/index.php?module=Accounts&action=DetailView&record=2e383b79-3892-799a-ad7d-529ae40d866e" ;
+        skos:altLabel         "Boxer Manufacturing" ;
+        skos:prefLabel        "Boxer" .

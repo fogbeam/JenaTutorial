@@ -1,0 +1,19 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shop:  <http://www.example.com/shop#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+shop:ChamoisHenleys  a  shop:Henleys , rdfs:Class .
+
+shop:Henleys  a          rdfs:Class ;
+        rdfs:subClassOf  shop:Shirts .
+
+shop:Shirts  a  rdfs:Class .
+shop:Pants   a  rdfs:Class .
+
+shop:RedPants a shop:Pants .
+shop:BluePants a shop:Pants .
+shop:OrangePants a shop:Pants .
+
+shop:GreenShirt a shop:Shirts .
+shop:BrownShirt a  shop:Shirts .
+shop:PinkShirt a shop:Shirts .

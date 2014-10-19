@@ -1,0 +1,56 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:TheGame  a           ex:Book ;
+        ex:author       "Neil Strauss" ;
+        ex:signedOutBy  ex:NicoleKidman .
+
+ex:borrows  a               rdf:Property ;
+        rdfs:domain         ex:Patron ;
+        rdfs:range          ex:Book ;
+        rdfs:subPropertyOf  ex:hasPossession .
+
+ex:AndreaWoo  a  ex:Patron .
+
+ex:DannyLemon  a  ex:Patron ;
+        ex:borrows  ex:FalseMemory .
+
+ex:FalseMemory  a  ex:Book ;
+        ex:author  "Dean Koontz" .
+
+ex:FromABuick8  a  ex:Book ;
+        ex:author  "Stephen King" .
+
+ex:Lightning  a    ex:Book ;
+        ex:author  "Dean Koontz" .
+
+ex:hasPossession  a  rdf:Property .
+
+ex:HeroinDiaries  a     ex:Book ;
+        ex:author       "Nikki Sixx" ;
+        ex:signedOutBy  ex:AndreaWoo .
+
+ex:Book  a      rdfs:Class .
+
+ex:SalemsLot  a    ex:Book ;
+        ex:author  "Stephen King" .
+
+ex:author  a    rdf:Property .
+
+ex:NicoleKidman  a  ex:Patron .
+
+ex:Patron  a    rdfs:Class .
+
+ex:HarryPotter1  a  ex:Book ;
+        ex:author  "JK Rowling" .
+
+ex:signedOutBy  a           rdf:Property ;
+        rdfs:domain         ex:Book ;
+        rdfs:range          ex:Patron ;
+        rdfs:subPropertyOf  ex:hasPossession .
+
+ex:PaulRogers  a  ex:Patron ;
+        ex:borrows  ex:HarryPotter1 .

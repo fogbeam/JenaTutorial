@@ -1,0 +1,29 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:MelanieStorm  a     ex:Person ;
+        ex:freelancesTo  ex:TheFirm ;
+        vcard:FN         "Melanie Storm" .
+
+ex:isEmployedBy  rdfs:subPropertyOf  ex:worksFor .
+
+ex:indirectlyContractsTo
+        rdfs:subPropertyOf  ex:contractsTo .
+
+ex:TheMatrix  a  ex:Entity .
+
+ex:TheFirm  a     ex:Entity ;
+        vcard:FN  "The Firm" .
+
+ex:freelancesTo  rdfs:subPropertyOf  ex:contractsTo .
+
+ex:worksFor  a  rdf:Property .
+
+ex:contractsTo  a           rdf:Property ;
+        rdfs:subPropertyOf  ex:worksFor .
+
+ex:PaulRogers  a      ex:Person ;
+        ex:freelancesTo  ex:TheFirm ;
+        vcard:FN         "Paul Rogers" .

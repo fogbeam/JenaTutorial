@@ -1,0 +1,24 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sales: <http://sales.example.com/sales#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cal:   <http://cal.example.com/cal#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:wrote  a            rdf:Property ;
+        owl:inverseOf  ex:writtenBy .
+
+ex:Macbeth  ex:setIn  ex:Scotland .
+
+ex:settingFor  a       rdf:Property ;
+        owl:inverseOf  ex:setIn .
+
+ex:setIn  a     rdf:Property .
+
+ex:writtenBy  a  rdf:Property .
+
+ex:KingLear  ex:setIn  ex:England .
+
+ex:Shakespeare  ex:wrote  ex:KingLear , ex:Macbeth .

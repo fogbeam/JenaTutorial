@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/commons-csv-1.0.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/httpclient-4.2.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/httpclient-cache-4.2.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/httpcore-4.2.5.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jackson-annotations-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jackson-core-2.3.3.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jackson-databind-2.3.3.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jcl-over-slf4j-1.7.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jena-arq-2.12.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jena-core-2.12.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jena-iri-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jena-sdb-1.5.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jena-tdb-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/jsonld-java-0.5.0.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/libthrift-0.9.1.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/slf4j-log4j12-1.7.6.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="/usr/java/apache-jena-2.12.1/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

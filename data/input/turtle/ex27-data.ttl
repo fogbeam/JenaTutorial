@@ -1,0 +1,16 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:Analyst  a                rdfs:Class ;
+        owl:equivalentClass  ex:Researcher .
+
+ex:Wenger  a    ex:Analyst .
+
+ex:Researcher  a  rdfs:Class .
+
+ex:Pond  a      ex:Researcher .
+
+ex:Foxx  a      ex:Researcher .

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:fogbeam="http://schema.fogbeam.com#"
+  xmlns:fogcust="http://customers.fogbeam.com#">
+  	
+  	<rdf:Description rdf:about="http://customers.fogbeam.com#Acme_Widgets" >
+  		<rdf:type rdf:resource="fogbeam:Customer" />
+		<rdf:type rdf:resource="owl:Thing" />
+		<rdfs:label>Acme Widgets</rdfs:label>
+		<rdfs:label>CUS729904</rdfs:label>
+		<dc:title>Acme Widgets</dc:title>
+		<dc:description>Acme Widgets is a custom widget manufacturer located in Wichita, Kansas, and operating since 1893.</dc:description>	
+		<skos:hiddenLabel>Acme, Ltd.</skos:hiddenLabel>
+		<skos:prefLabel>Acme</skos:prefLabel>
+		<skos:altLabel>Acme Manufacturing</skos:altLabel>
+  	</rdf:Description> 	
+  	
+ 	<rdf:Description rdf:about="http://customers.fogbeam.com#Boxer_Steel" >
+  		<rdf:type rdf:resource="fogbeam:Customer" />
+		<rdf:type rdf:resource="owl:Thing" />
+		<fogbeam:internalLink><![CDATA[http://crm.int.fogbeam.com/index.php?module=Accounts&action=DetailView&record=2e383b79-3892-799a-ad7d-529ae40d866e]]></fogbeam:internalLink>
+		<rdfs:label>Boxer Steel</rdfs:label>
+		<rdfs:label>CUS729897</rdfs:label>
+		<dc:title>Boxer Steel</dc:title>
+		<dc:description>Boxer Steel is a botique mini-mill steel products provider located in Pittsburgh, Pennsylvania and operating since 1973</dc:description>
+		<skos:prefLabel>Boxer</skos:prefLabel>
+		<skos:altLabel>Boxer Manufacturing</skos:altLabel>			
+  	</rdf:Description> 	
+  	
+  	<rdf:Description rdf:about="http://customers.fogbeam.com#Cullet_Boxes" >
+  		<rdf:type rdf:resource="fogbeam:Customer" />
+		<rdf:type rdf:resource="owl:Thing" />
+		<rdfs:label>Cullet Boxes</rdfs:label>
+		<rdfs:label>CUS-729913</rdfs:label>
+		<dc:title>Cullet Boxes</dc:title>
+		<dc:description>Cullet Boxes makes boxes in Lumberton, North Carolina.</dc:description>			
+		<skos:prefLabel>Cullet</skos:prefLabel>
+		<skos:altLabel>Cullet Manufacturing</skos:altLabel>
+  	</rdf:Description> 	  	
+  	  	
+</rdf:RDF>

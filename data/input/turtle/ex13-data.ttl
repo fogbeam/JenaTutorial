@@ -1,0 +1,33 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:movieTitle  a            rdf:Property ;
+        rdfs:subPropertyOf  rdfs:label .
+
+ex:EastOfEden  a       ex:Movie ;
+        ex:movieTitle  "East Of Eden" .
+
+ex:personName  a            rdf:Property ;
+        rdfs:subPropertyOf  rdfs:label .
+
+ex:Person  a    rdfs:Class .
+
+ex:ElizabethTaylor  a  ex:Person ;
+        ex:personName  "Elizabeth Taylor" .
+
+ex:Giant  a            ex:Movie ;
+        ex:movieTitle  "Giant" .
+
+ex:RockHudson  a       ex:Person ;
+        ex:personName  "Rock Hudson" .
+
+ex:Movie  a     rdfs:Class .
+
+ex:JamesDean  a        ex:Person ;
+        ex:personName  "James Dean" .
+
+ex:RebelWithoutACause
+        a              ex:Movie ;
+        ex:movieTitle  "Rebel Without A Cause" .

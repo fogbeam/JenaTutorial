@@ -1,0 +1,29 @@
+@prefix mfg:   <http://mfg.example.org/mfg#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ukat:  <http://www.workingontologist.com/ch8/ukat.owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foo:   <http://foo.example.com/foo#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:CowMilk  a           skos:Concept ;
+        skos:prefLabel  "Cow Milk" .
+
+ex:SheepMilk  a         skos:Concept ;
+        skos:prefLabel  "Sheep Milk" .
+
+ex:MilkBySourceAnimal
+        a            skos:Collection ;
+        rdfs:label   "Milk by source animal" ;
+        skos:member  ex:SheepMilk , ex:CowMilk , ex:GoatMilk , ex:BuffaloMilk .
+
+ex:GoatMilk  a          skos:Concept ;
+        skos:prefLabel  "Goat Milk" .
+
+ex:BuffaloMilk  a       skos:Concept ;
+        skos:prefLabel  "Buffalo Milk" .
+
+ex:Milk  a             skos:Concept ;
+        skos:narrower  ex:MilkBySourceAnimal .

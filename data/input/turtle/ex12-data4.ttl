@@ -1,0 +1,20 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:Zone2304  a  ex:NoFlyZone .
+
+ex:OffLimits  a          rdfs:Class ;
+        rdfs:subClassOf  ex:CivilianFacility .
+
+ex:CivilianFacility  a  rdfs:Class .
+
+ex:Zone1293  a  ex:NoFlyZone .
+
+ex:School1  a   ex:OffLimits .
+
+ex:NoFlyZone  a          rdfs:Class ;
+        rdfs:subClassOf  ex:CivilianFacility .
+
+ex:Hospital1  a  ex:OffLimits .

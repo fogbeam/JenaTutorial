@@ -1,0 +1,93 @@
+@prefix : <http://competitive.fogbeam.org/ontology/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://competitive.fogbeam.org/ontology/> .
+
+<http://example.fogbeam.org/ontology/> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://example.fogbeam.org/ontology/baseOntologyLoaded
+
+<http://example.fogbeam.org/ontology/baseOntologyLoaded> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "baseOntologyLoaded" .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+### http://example.fogbeam.org/ontology/bpm/CreditApproval
+<http://example.fogbeam.org/ontology/bpm/CreditApproval> rdf:type owl:Class;
+                                                  
+                                                  rdfs:label "CreditApproval";
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/bpm/ApprovalTask> .
+
+
+
+### http://example.fogbeam.org/ontology/bpm/PurchaseOrderApproval
+<http://example.fogbeam.org/ontology/bpm/PurchaseOrderApproval> rdf:type owl:Class;
+                                                  
+                                                  rdfs:label "PurchaseOrderApproval";
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/bpm/ApprovalTask> .
+
+
+### http://example.fogbeam.org/ontology/bpm/ApprovalTask
+<http://example.fogbeam.org/ontology/bpm/ApprovalTask> rdf:type owl:Class;
+                                                  
+                                                  rdfs:label "ApprovalTask";
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/bpm/UserTask> .
+
+
+
+### http://example.fogbeam.org/ontology/bpm/UserTask
+<http://example.fogbeam.org/ontology/bpm/UserTask> rdf:type owl:Class;
+                                                  
+                                                  rdfs:label "UserTask";
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/FogbeamEntity> .
+
+
+
+### http://example.fogbeam.org/ontology/bpm/UserTask
+<http://example.fogbeam.org/ontology/bpm/UserTask> rdf:type owl:Class;
+                                                  
+                                                  rdfs:label "UserTask";
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/FogbeamEntity> .
+
+
+
+
+###  http://example.fogbeam.org/ontology/Company
+
+<http://example.fogbeam.org/ontology/Company> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "Company" ;
+                                                  
+                                                  rdfs:subClassOf <http://example.fogbeam.org/ontology/FogbeamEntity> .
+
+
+
+###  http://example.fogbeam.org/ontology/FogbeamEntity
+
+<http://example.fogbeam.org/ontology/FogbeamEntity> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:label "FogbeamEntity"@en ;
+                                                        
+                                                        rdfs:subClassOf owl:Thing .

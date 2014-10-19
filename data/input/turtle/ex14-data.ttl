@@ -1,0 +1,45 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:QEII  a                ex:Vessel ;
+        ex:maidenVoyage   "May 2, 1969" ;
+        ex:nextDeparture  "March 4, 2010" .
+
+ex:DeployedVessel  a     rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:Constitution  a        ex:Vessel ;
+        ex:maidenVoyage   "July 22, 1798" ;
+        ex:nextDeparture  "January 12, 2009" .
+
+ex:maidenVoyage  a   rdf:Property ;
+        rdfs:domain  ex:DeployedVessel .
+
+ex:Titanic  a               ex:Vessel ;
+        ex:destructionDate  "April 14, 1912" ;
+        ex:maidenVoyage     "April 10, 1912" .
+
+ex:InServiceVessel  a    rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:nextDeparture  a  rdf:Property ;
+        rdfs:domain  ex:InServiceVessel .
+
+ex:Vessel  a    rdfs:Class .
+
+ex:OutOfServiceVessel
+        a                rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:Berengaria  a               ex:Vessel ;
+        ex:decommissionedDate  "1938" ;
+        ex:maidenVoyage        "June 16, 1913" .
+
+ex:decommissionedDate
+        a            rdf:Property ;
+        rdfs:domain  ex:OutOfServiceVessel .
+
+ex:destructionDate  a  rdf:Property ;
+        rdfs:domain  ex:OutOfServiceVessel .

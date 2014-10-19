@@ -1,0 +1,47 @@
+{
+  "@graph" : [ {
+    "@id" : "fogcust:Acme_Widgets",
+    "@type" : [ "owl:Thing", "fogbeam:Customer" ],
+    "description" : "Acme Widgets is a custom widget manufacturer located in Wichita, Kansas, and operating since 1893.",
+    "title" : "Acme Widgets",
+    "label" : [ "CUS729904", "Acme Widgets" ],
+    "altLabel" : "Acme Manufacturing",
+    "hiddenLabel" : "Acme, Ltd.",
+    "prefLabel" : "Acme"
+  }, {
+    "@id" : "fogcust:Boxer_Steel",
+    "@type" : [ "owl:Thing", "fogbeam:Customer" ],
+    "description" : "Boxer Steel is a botique mini-mill steel products provider located in Pittsburgh, Pennsylvania and operating since 1973",
+    "title" : "Boxer Steel",
+    "internalLink" : "http://crm.int.fogbeam.com/index.php?module=Accounts&action=DetailView&record=2e383b79-3892-799a-ad7d-529ae40d866e",
+    "label" : [ "CUS729897", "Boxer Steel" ],
+    "altLabel" : "Boxer Manufacturing",
+    "prefLabel" : "Boxer"
+  }, {
+    "@id" : "fogcust:Cullet_Boxes",
+    "@type" : [ "owl:Thing", "fogbeam:Customer" ],
+    "description" : "Cullet Boxes makes boxes in Lumberton, North Carolina.",
+    "title" : "Cullet Boxes",
+    "label" : [ "CUS-729913", "Cullet Boxes" ],
+    "altLabel" : "Cullet Manufacturing",
+    "prefLabel" : "Cullet"
+  } ],
+  "@context" : {
+    "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description" : "http://purl.org/dc/elements/1.1/description",
+    "title" : "http://purl.org/dc/elements/1.1/title",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "hiddenLabel" : "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+    "internalLink" : "http://schema.fogbeam.com#internalLink",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "fogcust" : "http://customers.fogbeam.com#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "fogbeam" : "http://schema.fogbeam.com#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "vcard" : "http://www.w3.org/2001/vcard-rdf/3.0#"
+  }
+}

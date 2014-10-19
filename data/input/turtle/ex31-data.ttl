@@ -1,0 +1,99 @@
+@prefix mfg:   <http://mfg.example.org/mfg#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foo:   <http://foo.example.com/foo#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+mfg:Product6  foo:modelNumber  foo:TC43 ;
+        mfg:facility     "Factory" .
+
+ex:Product2  foo:modelNumber    foo:ZX3P ;
+        ex:available            "4" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "KD5243" .
+
+ex:Product8  foo:modelNumber    <file:///home/development/presentations/trijug_semantic/JenaTutorial/data/owl/ex31/foo;SP1234> ;
+        ex:available            "4" ;
+        ex:division             "Safety" ;
+        ex:manufactureLocation  "Cleveland" ;
+        ex:productLine          "Safety Valve" ;
+        ex:sku                  "HI4554" .
+
+foo:modelNumber  a  owl:InverseFunctionalProperty , rdf:Property .
+
+mfg:Product5  foo:modelNumber  foo:ZX3 ;
+        mfg:facility     "Factory" .
+
+ex:Product1  foo:modelNumber    foo:ZX3 ;
+        ex:available            "23" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "FB3524" .
+
+ex:Product7  foo:modelNumber    foo:DBB12 ;
+        ex:available            "100" ;
+        ex:division             "Accessories" ;
+        ex:manufactureLocation  "Hong Kong" ;
+        ex:productLine          "Monitor" ;
+        ex:sku                  "ND5520" .
+
+mfg:Product4  foo:modelNumber  foo:ZX3S ;
+        mfg:facility     "Assembly Center" .
+
+ex:Product6  foo:modelNumber    foo:B1431 ;
+        ex:available            "0" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Seoul" ;
+        ex:productLine          "Active Sensor" ;
+        ex:sku                  "KK3945" .
+
+mfg:Product3  foo:modelNumber  foo:M13P ;
+        mfg:facility     "Assembly Center" .
+
+mfg:Product9  foo:modelNumber  foo:1180M ;
+        mfg:facility     "Machine Shop" .
+
+ex:Product5  foo:modelNumber    foo:B1430X ;
+        ex:available            "14" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Elizabeth" ;
+        ex:productLine          "Feedback Line" ;
+        ex:sku                  "CL5934" .
+
+mfg:Product2  foo:modelNumber  foo:B1431 ;
+        mfg:facility     "Assembly Center" .
+
+mfg:Product8  foo:modelNumber  foo:SP1234 ;
+        mfg:facility     "Machine Shop" .
+
+ex:Product4  foo:modelNumber    foo:B1430 ;
+        ex:available            "23" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Elizabeth" ;
+        ex:productLine          "Feedback Line" ;
+        ex:sku                  "KS4520" .
+
+mfg:Product1  foo:modelNumber  foo:B1430 ;
+        mfg:facility     "Assembly Center" .
+
+mfg:Product7  foo:modelNumber  foo:B1430X ;
+        mfg:facility     "Machine Shop" .
+
+ex:Product3  foo:modelNumber    foo:ZX3S ;
+        ex:available            "34" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "IL4028" .
+
+ex:Product9  foo:modelNumber    foo:SPX1234 ;
+        ex:available            "14" ;
+        ex:division             "Safety" ;
+        ex:manufactureLocation  "Cleveland" ;
+        ex:productLine          "Safety Valve" ;
+        ex:sku                  "OP5333" .

@@ -1,0 +1,96 @@
+@prefix mfg:   <http://mfg.example.org/mfg#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+mfg:Product6  mfg:facility  "Factory" ;
+        mfg:modelNumber  mfg:TC43 .
+
+ex:Product2  ex:available       "4" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:modelNumber          ex:ZX3P ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "KD5243" .
+
+ex:Product8  ex:available       "4" ;
+        ex:division             "Safety" ;
+        ex:manufactureLocation  "Cleveland" ;
+        ex:modelNumber          <file:///home/development/presentations/trijug_semantic/JenaTutorial/data/owl/ex30/example;SP1234> ;
+        ex:productLine          "Safety Valve" ;
+        ex:sku                  "HI4554" .
+
+mfg:Product5  mfg:facility  "Factory" ;
+        mfg:modelNumber  mfg:ZX3 .
+
+ex:Product1  ex:available       "23" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:modelNumber          ex:ZX3 ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "FB3524" .
+
+ex:Product7  ex:available       "100" ;
+        ex:division             "Accessories" ;
+        ex:manufactureLocation  "Hong Kong" ;
+        ex:modelNumber          ex:DBB12 ;
+        ex:productLine          "Monitor" ;
+        ex:sku                  "ND5520" .
+
+mfg:Product4  mfg:facility  "Assembly Center" ;
+        mfg:modelNumber  mfg:ZX3S .
+
+ex:Product6  ex:available       "0" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Seoul" ;
+        ex:modelNumber          ex:B1431 ;
+        ex:productLine          "Active Sensor" ;
+        ex:sku                  "KK3945" .
+
+mfg:Product3  mfg:facility  "Assembly Center" ;
+        mfg:modelNumber  mfg:M13P .
+
+mfg:Product9  mfg:facility  "Machine Shop" ;
+        mfg:modelNumber  mfg:1180M .
+
+ex:Product5  ex:available       "14" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Elizabeth" ;
+        ex:modelNumber          ex:B1430X ;
+        ex:productLine          "Feedback Line" ;
+        ex:sku                  "CL5934" .
+
+mfg:Product2  mfg:facility  "Assembly Center" ;
+        mfg:modelNumber  mfg:B1431 .
+
+mfg:Product8  mfg:facility  "Machine Shop" ;
+        mfg:modelNumber  mfg:SP1234 .
+
+ex:Product4  ex:available       "23" ;
+        ex:division             "Control Engineering" ;
+        ex:manufactureLocation  "Elizabeth" ;
+        ex:modelNumber          ex:B1430 ;
+        ex:productLine          "Feedback Line" ;
+        ex:sku                  "KS4520" .
+
+mfg:Product1  mfg:facility  "Assembly Center" ;
+        mfg:modelNumber  mfg:B1430 .
+
+mfg:Product7  mfg:facility  "Machine Shop" ;
+        mfg:modelNumber  mfg:B1430X .
+
+ex:Product3  ex:available       "34" ;
+        ex:division             "Manufacturing Support" ;
+        ex:manufactureLocation  "Sacramento" ;
+        ex:modelNumber          ex:ZX3S ;
+        ex:productLine          "Paper Machine" ;
+        ex:sku                  "IL4028" .
+
+ex:Product9  ex:available       "14" ;
+        ex:division             "Safety" ;
+        ex:manufactureLocation  "Cleveland" ;
+        ex:modelNumber          ex:SPX1234 ;
+        ex:productLine          "Safety Valve" ;
+        ex:sku                  "OP5333" .

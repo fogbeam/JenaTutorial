@@ -1,0 +1,24 @@
+@prefix mfg:   <http://mfg.example.org/mfg#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:Product4  owl:sameAs  mfg:Product4 .
+
+ex:Product9  owl:sameAs  mfg:Product9 .
+
+ex:Product2  owl:sameAs  mfg:Product2 .
+
+ex:Product7  owl:sameAs  mfg:Product7 .
+
+ex:Product15  owl:sameAs  mfg:Product5 .
+
+ex:Product3  owl:sameAs  mfg:Product3 .
+
+ex:Product8  owl:sameAs  mfg:Product8 .
+
+ex:Product1  owl:sameAs  mfg:Product1 .
+
+ex:Product6  owl:sameAs  mfg:Product6 .

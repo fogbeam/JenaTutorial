@@ -1,0 +1,70 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:Officer  a   rdfs:Class .
+
+ex:destructionDate  a  rdf:Property ;
+        rdfs:domain  ex:OutOfServiceVessel .
+
+ex:Berengaria  a               ex:Vessel ;
+        ex:decommissionedDate  "1938" ;
+        ex:hasCommander        ex:Johnson ;
+        ex:maidenVoyage        "June 16, 1913" .
+
+ex:decommissionedDate
+        a            rdf:Property ;
+        rdfs:domain  ex:OutOfServiceVessel .
+
+ex:Titanic  a               ex:Vessel ;
+        ex:destructionDate  "April 14, 1912" ;
+        ex:hasCommander     ex:Smith ;
+        ex:maidenVoyage     "April 10, 1912" .
+
+ex:DeployedVessel  a     rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:Captain  a            rdfs:Class ;
+        rdfs:subClassOf  ex:Officer .
+
+ex:Commander  a          rdfs:Class ;
+        rdfs:subClassOf  ex:Officer .
+
+ex:Vessel  a    rdfs:Class .
+
+ex:InServiceVessel  a    rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:LieutenantCommander
+        a                rdfs:Class ;
+        rdfs:subClassOf  ex:Officer .
+
+ex:Ensign  a             rdfs:Class ;
+        rdfs:subClassOf  ex:Officer .
+
+ex:OutOfServiceVessel
+        a                rdfs:Class ;
+        rdfs:subClassOf  ex:Vessel .
+
+ex:maidenVoyage  a   rdf:Property ;
+        rdfs:domain  ex:DeployedVessel .
+
+ex:Constitution  a        ex:Vessel ;
+        ex:hasCommander   ex:Preble ;
+        ex:maidenVoyage   "July 22, 1798" ;
+        ex:nextDeparture  "January 12, 2009" .
+
+ex:QEII  a                ex:Vessel ;
+        ex:hasCommander   ex:Warwick ;
+        ex:maidenVoyage   "May 2, 1969" ;
+        ex:nextDeparture  "March 4, 2010" .
+
+ex:hasCommander  a  rdf:Property ;
+        rdfs:range  ex:Captain .
+
+ex:nextDeparture  a  rdf:Property ;
+        rdfs:domain  ex:InServiceVessel .
+
+ex:Lieutenant  a         rdfs:Class ;
+        rdfs:subClassOf  ex:Officer .

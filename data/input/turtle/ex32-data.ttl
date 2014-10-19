@@ -1,0 +1,21 @@
+@prefix mfg:   <http://mfg.example.org/mfg#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ukat:  <http://www.workingontologist.com/ch8/ukat.owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foo:   <http://foo.example.com/foo#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ukat:FoobarCooperation
+        a             skos:Concept ;
+        skos:broader  ukat:EconomicCooperation .
+
+ukat:EconomicCooperation
+        a               skos:Concept ;
+        skos:altLabel   "Economic Co-operation" ;
+        skos:broader    ukat:EconomicPolicy ;
+        skos:narrower   ukat:IndustrialCooperation ;
+        skos:prefLabel  "Economic Cooperation" ;
+        skos:related    ukat:Interdependence .

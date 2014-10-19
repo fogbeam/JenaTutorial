@@ -1,0 +1,18 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/example#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+ex:checkedOut  a            rdf:Property ;
+        rdfs:subPropertyOf  ex:hasPossession .
+
+ex:borrows  a               rdf:Property ;
+        rdfs:subPropertyOf  ex:hasPossession .
+
+ex:DannyLemon  a     ex:Person ;
+        ex:checkedOut  ex:Book2 .
+
+ex:hasPossession  a  rdf:Property .
+
+ex:PaulRogers  a  ex:Person ;
+        ex:borrows  ex:Book1 .
