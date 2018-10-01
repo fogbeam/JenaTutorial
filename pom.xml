@@ -1,46 +1,194 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>JenaTextDemo</groupId>
-	<artifactId>JenaTextDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<packaging>jar</packaging>
 
 	<dependencies>
+
+
+		<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-base</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-text</artifactId>
-			<version>1.1.0</version>
-		</dependency>
-
-<!-- 
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-core</artifactId>
-			<version>4.3.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queryparser</artifactId>
-			<version>4.3.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-core</artifactId>
-			<version>4.3.1</version>
+			<version>3.8.0</version>
 		</dependency>
 
 
 		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-solrj</artifactId>
-			<version>4.3.1</version>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-core</artifactId>
+			<version>3.8.0</version>
 		</dependency>
- -->
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-tdb</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>org.apache.jena</groupId> <artifactId>jena-tdb2</artifactId> 
+			<version>3.8.0</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-dboe-base -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-dboe-base</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-dboe-base -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-dboe-transaction</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-dboe-base -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-dboe-trans-data</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-dboe-base -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-dboe-index</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-iri</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.7</version>
+		</dependency>
 
 
 	</dependencies>
 
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>org.fogbeam.jenatutorial.text.JenaTextMain1</mainClass>
+								</transformer>
+							</transformers>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+									</excludes>
+								</filter>
+							</filters>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+		</plugins>
+	</build>
+
+
+
+
+	<groupId>org.fogbeam.example</groupId>
+	<artifactId>jena-tutorial</artifactId>
 </project>
