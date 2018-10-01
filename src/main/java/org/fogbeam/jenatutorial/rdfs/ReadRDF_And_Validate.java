@@ -13,7 +13,6 @@ import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.reasoner.ValidityReport;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.util.PrintUtil;
-import org.apache.jena.vocabulary.RDF;
 
 public class ReadRDF_And_Validate
 {

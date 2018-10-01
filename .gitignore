@@ -2,3 +2,4 @@ bin/*
 jenastore/*
 target/*
 /target/
+data/output/

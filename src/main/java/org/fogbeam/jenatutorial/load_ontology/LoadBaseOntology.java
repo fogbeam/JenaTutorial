@@ -16,7 +16,7 @@ public class LoadBaseOntology
 	public static void main(String[] args) 
 	{
 
-		Dataset dataset = TDBFactory.createDataset("/opt/fogcutter/quoddy/jenastore/triples");
+		Dataset dataset = TDBFactory.createDataset("jenastore/triples");
 		
 		dataset.begin(ReadWrite.WRITE);
 

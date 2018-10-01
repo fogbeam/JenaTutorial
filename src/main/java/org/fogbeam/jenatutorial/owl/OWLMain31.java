@@ -15,7 +15,6 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.util.FileManager;
-import org.apache.jena.vocabulary.ReasonerVocabulary;
 
 public class OWLMain31
 {

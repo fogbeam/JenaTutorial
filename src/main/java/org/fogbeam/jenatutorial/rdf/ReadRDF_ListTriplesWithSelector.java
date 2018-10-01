@@ -25,16 +25,18 @@ public class ReadRDF_ListTriplesWithSelector
 		// load some data that uses RDFS
 		Model data = FileManager.get().loadModel("file:data/input/turtle/ex2-data.ttl");
 		
-		// InfModel infmodel = ModelFactory.createRDFSModel(data);
+	
 		
 		Reasoner reasoner = ReasonerRegistry.getRDFSReasoner();
 		reasoner.setParameter(ReasonerVocabulary.PROPsetRDFSLevel, 
                 ReasonerVocabulary.RDFS_DEFAULT);
 		InfModel infmodel = ModelFactory.createInfModel(reasoner, data );
+	
+		/*
+			StmtIterator sIter = infmodel.listStatements();
+		*/
 		
-
-		StmtIterator sIter = infmodel.listStatements();
-		
+		StmtIterator sIter = data.listStatements();
 		
 		while( sIter.hasNext() )
 		{

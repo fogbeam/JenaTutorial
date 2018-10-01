@@ -1,29 +1,34 @@
 package org.fogbeam.jenatutorial.rdf;
 
+import java.io.File;
 import java.io.FileOutputStream;
-
-import org.apache.jena.riot.Lang;
-import org.apache.jena.riot.RDFDataMgr;
 
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.DatasetFactory;
 import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.Statement;
-import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.RDFDataMgr;
 
 public class ReadRDFXML_WriteJSONLD 
 {
 
-
 	public static void main(String[] args) throws Exception
 	{
-		Dataset dataset = DatasetFactory.createMem();
-		RDFDataMgr.read(dataset, "file:/development/presentations/trijug_semantic/JenaTutorial/data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
+		Dataset dataset = DatasetFactory.createGeneral();
+		RDFDataMgr.read(dataset, "file:data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
 		
 		Model model = dataset.getDefaultModel();
 		
-		FileOutputStream fos = new FileOutputStream( "/development/presentations/trijug_semantic/JenaTutorial/data/output/jsonld/customers.rdf.jsonld" );
+		File outFile = new File( "data/output/jsonld/customers.rdf.jsonld"  );
+		if( outFile.exists() ) 
+		{
+			outFile.delete();
+		}
+		
+		FileOutputStream fos = new FileOutputStream( outFile );
 		RDFDataMgr.write( fos, model, Lang.JSONLD );
 		fos.close();
+		
+		System.out.println( "done" );
 	}
 }

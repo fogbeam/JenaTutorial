@@ -21,7 +21,6 @@ public class SparqlQueryWithPropertySubclass
 		// load some data that uses RDFS
 		Model data = FileManager.get().loadModel("file:data/input/turtle/ex5-data.ttl");
 
-		
 		Reasoner reasoner = ReasonerRegistry.getRDFSReasoner();
 		reasoner.setParameter(ReasonerVocabulary.PROPsetRDFSLevel, 
                 ReasonerVocabulary.RDFS_DEFAULT);

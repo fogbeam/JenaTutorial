@@ -20,7 +20,6 @@ public class BasicSparqlQueryV2
 
 	public static void main( String[] args )
 	{
-
 		// load some data that uses RDFS
 		Model data = FileManager.get().loadModel("file:data/input/turtle/ex4-data.ttl");
 		

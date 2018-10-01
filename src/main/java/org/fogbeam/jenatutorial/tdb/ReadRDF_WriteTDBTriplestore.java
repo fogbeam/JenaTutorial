@@ -12,11 +12,11 @@ public class ReadRDF_WriteTDBTriplestore
 
 	public static void main(String[] args) 
 	{
-		Dataset dataset = TDBFactory.createDataset( "/development/presentation/trijug_semantic/JenaTutorial/jenastore/triples" );
+		Dataset dataset = TDBFactory.createDataset( "jenastore/triples" );
 		
 		dataset.begin(ReadWrite.WRITE);
 		
-		RDFDataMgr.read(dataset, "file:///development/presentation/trijug_semantic/JenaTutorial/data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
+		RDFDataMgr.read(dataset, "file:data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
 		
 		dataset.commit();
 		dataset.end();

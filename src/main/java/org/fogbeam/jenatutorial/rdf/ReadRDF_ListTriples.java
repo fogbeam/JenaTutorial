@@ -15,8 +15,8 @@ public class ReadRDF_ListTriples
 
 	public static void main(String[] args) 
 	{
-		Dataset dataset = DatasetFactory.createMem();
-		RDFDataMgr.read(dataset, "file:/development/presentations/trijug_semantic/JenaTutorial/data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
+		Dataset dataset = DatasetFactory.createGeneral();
+		RDFDataMgr.read(dataset, "file:data/input/rdfxml/customers.rdf.xml", Lang.RDFXML);
 		
 		Model model = dataset.getDefaultModel();
 		
