@@ -3,6 +3,6 @@
 @prefix vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 
 eg:colin  a     eg:Teenager ;
-        eg:age  13 ;
+        eg:age  "13" ;
         eg:mum  eg:rosy .
         
