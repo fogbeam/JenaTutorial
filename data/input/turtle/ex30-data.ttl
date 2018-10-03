@@ -18,7 +18,7 @@ ex:Product2  ex:available       "4" ;
 ex:Product8  ex:available       "4" ;
         ex:division             "Safety" ;
         ex:manufactureLocation  "Cleveland" ;
-        ex:modelNumber          <file:///home/development/presentations/trijug_semantic/JenaTutorial/data/owl/ex30/example;SP1234> ;
+        ex:modelNumber          <file:///home/development/talks_and_presentations/semantic_web_programming/JenaTutorial/data/owl/ex30/example;SP1234> ;
         ex:productLine          "Safety Valve" ;
         ex:sku                  "HI4554" .
 

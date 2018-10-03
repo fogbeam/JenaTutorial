@@ -8,6 +8,6 @@ ex:maidenName  rdfs:domain  ex:MarriedWoman .
 ex:MarriedWoman  a       rdfs:Class ;
         rdfs:subClassOf  ex:Woman .
 
-ex:DenisseLemon  ex:maidenName  "Simmons" .
+ex:DeniseLemon  ex:maidenName  "Simmons" .
 
 ex:Woman  a     rdfs:Class .

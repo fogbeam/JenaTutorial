@@ -27,10 +27,9 @@ public class ShowInferredTypeFromProperty
 		reasoner.setParameter(ReasonerVocabulary.PROPsetRDFSLevel, 
                 ReasonerVocabulary.RDFS_DEFAULT);
 		InfModel infmodel = ModelFactory.createInfModel(reasoner, data );
+
 		
-	
-		
-		String queryString = "SELECT ?z WHERE { <http://www.example.org/example#DenisseLemon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?z  }" ;
+		String queryString = "SELECT ?z WHERE { <http://www.example.org/example#DeniseLemon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?z  }" ;
 
 		/* Now create and execute the query using a Query object */
 		Query query = QueryFactory.create(queryString) ;

@@ -14,7 +14,10 @@ import org.apache.jena.util.FileManager;
 
 public class OWL_SameRecipe
 {
-
+	/* NOTE: the levels of inference in this example are a little tricky.  Consider skipping in the
+	 * presentation in the name of expediency
+	 */
+	
 	public static void main( String[] args )
 	{
 		// load some data that uses RDFS

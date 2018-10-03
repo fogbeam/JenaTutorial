@@ -31,8 +31,6 @@ RDFSLabels
 
 ReadRDF_And_Validate
 
-~~
-
 ShowInferredTypeFromProperty
 
 ShowInferredTypes_Subclass_Multiple
@@ -51,8 +49,6 @@ AnotherSubpropertyExample
 
 PropertyWithMultipleDomain
 
-~~~
-
 OWL_EquivalentClass
 
 OWL_EquivalentProperty
@@ -60,8 +56,6 @@ OWL_EquivalentProperty
 OWL_InverseOf
 
 OWL_SameAs
-
-OWL_SameRecipe
 
 OWL_TransitiveProperty
 
@@ -71,33 +65,38 @@ ShowProperty_InverseOf
 
 OWL_WeirdInference
 
-OWLMain26
-
 OWLMain30_WithoutSameAs
 
 OWLMain30_WithSameAs
 
-OWLMain31
-
-~~
-
-RDFS_CommonProperty
-
-RDFS_WeirdInference
-
-TermReconcilation_ClassEquivalence
-
-TermReconcilation_UnionPattern
-
-TermReconciliation_Subclass
-
-~~
+JenaTextMain1
 
 SKOSMain32
 
 SKOSMain33
 
+~~~ To illustrate some weirdness that can crop up
+
+RDFS_CommonProperty
+
+RDFS_WeirdInference
+
+~~~ Term reconciliation without using OWL
+
+TermReconcilation_ClassEquivalence -- using subclass twice to treat two classes as equivalent
+
+TermReconciliation_Subclass -- similar, but without the second subclass property
+
+TermReconcilation_UnionPattern
+
 ~~~
 
-JenaTextMain1
+# skip in the name of time if necessary
+OWL_SameRecipe
+
+OWLMain26
+
+OWLMain31
+
+
 

@@ -20,12 +20,11 @@ public class OWL_TransitiveProperty
 		// load some data that uses RDFS
 		Model data = FileManager.get().loadModel("file:data/input/turtle/ex22-data.ttl");
 		
-		
 		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
 		InfModel infmodel = ModelFactory.createInfModel(reasoner, data );
 		
 		/* Do a SPARQL Query over the data in the model */
-		String queryString = "SELECT ?x ?z WHERE { ?x <http://www.example.org/example#hasAncestor> ?z }";
+		String queryString = "SELECT ?x ?z WHERE { ?x <http://www.example.org/example#hasRelative> ?z }";
 
 		/* Now create and execute the query using a Query object */
 		Query query = QueryFactory.create(queryString) ;

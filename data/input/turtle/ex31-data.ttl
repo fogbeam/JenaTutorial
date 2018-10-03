@@ -16,7 +16,7 @@ ex:Product2  foo:modelNumber    foo:ZX3P ;
         ex:productLine          "Paper Machine" ;
         ex:sku                  "KD5243" .
 
-ex:Product8  foo:modelNumber    <file:///home/development/presentations/trijug_semantic/JenaTutorial/data/owl/ex31/foo;SP1234> ;
+ex:Product8  foo:modelNumber    <file:///home/development/talks_and_presentations/semantic_web_programming/JenaTutorial/data/owl/ex31/foo;SP1234> ;
         ex:available            "4" ;
         ex:division             "Safety" ;
         ex:manufactureLocation  "Cleveland" ;

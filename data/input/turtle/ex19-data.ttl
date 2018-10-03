@@ -4,6 +4,10 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 
+# when you do the polymorphic query, the results are half flipped around, because
+# the domain and range of the two sub-properties are swapped. 
+
+
 ex:TheGame  a           ex:Book ;
         ex:author       "Neil Strauss" ;
         ex:signedOutBy  ex:NicoleKidman .

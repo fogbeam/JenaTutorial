@@ -4,13 +4,13 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 
-ex:hasAncestor  a  owl:TransitiveProperty , rdf:Property .
+ex:hasRelative  a  owl:TransitiveProperty , rdf:Property .
 
 ex:Beatrix  ex:hasParent  ex:Wilhelmina .
 
 ex:WillemAlexander  ex:hasParent  ex:Beatrix .
 
 ex:hasParent  a             rdf:Property ;
-        rdfs:subPropertyOf  ex:hasAncestor .
+        rdfs:subPropertyOf  ex:hasRelative .
 
 ex:Alexia  ex:hasParent  ex:WillemAlexander .
